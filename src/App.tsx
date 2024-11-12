@@ -5,6 +5,7 @@ import { Root } from "./Root";
 import { Homepage } from "./Homepage";
 import { Filming } from "./Filming";
 import { Photography } from "./Photography";
+import { EquipmentRental } from "./EquipmentRental";
 
 const router = createBrowserRouter([
 	{
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
 			{ path: "/", element: <Homepage /> },
 			{ path: "/filming", element: <Filming /> },
 			{ path: "/photography", element: <Photography /> },
-			// { path: "/equipment-rental", element: <Equipment Rental /> },
+			{ path: "/equipment-rental", element: <EquipmentRental /> },
 			// { path: "/calendar", element: <Calendar /> },
 		],
 	},

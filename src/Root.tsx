@@ -1,19 +1,22 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 export const Root = () => {
 	return (
 		<>
-			<ul>
+			{/* <ul>
 				<li>
 					<Link to="/">Homepage</Link>
 				</li>
 				<li>
-					<Link to="/Filming">Filming</Link>
+					<Link to="/filming">Filming</Link>
 				</li>
 				<li>
-					<Link to="/Photography">Photography</Link>
+					<Link to="/photography">Photography</Link>
 				</li>
-			</ul>
+				<li>
+					<Link to="/equipment-rental">Equipment Rental</Link>
+				</li>
+			</ul> */}
 			<Outlet />
 		</>
 	);

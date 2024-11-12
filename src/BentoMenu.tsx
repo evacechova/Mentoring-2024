@@ -3,9 +3,9 @@ import { BentoMenuBox } from "./BentoMenuBox";
 export const BentoMenu = () => {
 	return (
 		<div>
-			<BentoMenuBox text="Filming" />
-			<BentoMenuBox text="Photography" />
-			<BentoMenuBox text="Equipment Rental" />
+			<BentoMenuBox text="Filming" to="/filming" />
+			<BentoMenuBox text="Photography" to="/photography" />
+			<BentoMenuBox text="Equipment Rental" to="/equipment-rental" />
 		</div>
 	);
 };
