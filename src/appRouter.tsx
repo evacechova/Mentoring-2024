@@ -4,6 +4,7 @@ import { Homepage } from "./Homepage";
 import { Filming } from "./Filming";
 import { Photography } from "./Photography";
 import { EquipmentRental } from "./EquipmentRental";
+import { ROUTES } from "./globalVariables";
 
 export const APPROUTER = createBrowserRouter([
 	{
