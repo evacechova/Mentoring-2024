@@ -10,7 +10,7 @@ import { ROUTES } from "./globalVariables";
 const COMPONENTS: Record<string, JSX.Element> = {
 	Filming: <Filming />,
 	Photography: <Photography />,
-	"Equipment rental": <EquipmentRental />,
+	EquipmentRental: <EquipmentRental />,
 };
 
 export const APPROUTER = createBrowserRouter([

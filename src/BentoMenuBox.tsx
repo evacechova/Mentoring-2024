@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 
-export const BentoMenuBox = ({ text, to }: { text: string; to: string }) => {
+type BentoMenuBoxProps = {
+	text: string;
+	to: string;
+};
+
+export const BentoMenuBox: React.FC<BentoMenuBoxProps> = ({ text, to }) => {
 	return (
 		<div>
 			<Link to={to}>
