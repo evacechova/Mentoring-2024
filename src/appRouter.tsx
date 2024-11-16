@@ -6,16 +6,23 @@ import { Photography } from "./Photography";
 import { EquipmentRental } from "./EquipmentRental";
 import { ROUTES } from "./globalVariables";
 
+// Map component to route title
+const COMPONENTS: Record<string, JSX.Element> = {
+	Filming: <Filming />,
+	Photography: <Photography />,
+	"Equipment rental": <EquipmentRental />,
+};
+
 export const APPROUTER = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
 		children: [
 			{ path: "/", element: <Homepage /> },
-			{ path: "/filming", element: <Filming /> },
-			{ path: "/photography", element: <Photography /> },
-			{ path: "/equipment-rental", element: <EquipmentRental /> },
-			// { path: "/calendar", element: <Calendar /> },
+			...ROUTES.map(({ route, title }) => ({
+				path: route,
+				element: COMPONENTS[title],
+			})),
 		],
 	},
 ]);
