@@ -5,7 +5,7 @@ import { Filming } from "./Filming";
 import { Photography } from "./Photography";
 import { EquipmentRental } from "./EquipmentRental";
 
-export const ROUTER = createBrowserRouter([
+export const APPROUTER = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
