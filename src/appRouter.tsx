@@ -10,7 +10,7 @@ import { ROUTES } from "./globalVariables";
 const COMPONENTS: Record<string, JSX.Element> = {
 	Filming: <Filming />,
 	Photography: <Photography />,
-	EquipmentRental: <EquipmentRental />,
+	"Equipment rental": <EquipmentRental />,
 };
 
 export const appRouter = createBrowserRouter([
@@ -19,7 +19,7 @@ export const appRouter = createBrowserRouter([
 		element: <Root />,
 		children: [
 			{ path: "/", element: <Homepage /> },
-			...ROUTES.map(({ route, title }) => ({
+			...Object.entries(ROUTES).map(([key, { route, title }]) => ({
 				path: route,
 				element: COMPONENTS[title],
 			})),

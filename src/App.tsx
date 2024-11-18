@@ -1,10 +1,10 @@
 // import { useState } from "react";
 // import "./App.css";
 import { RouterProvider } from "react-router-dom";
-import { APPROUTER } from "./appRouter";
+import { appRouter } from "./appRouter";
 
 function App() {
-	return <RouterProvider router={APPROUTER} />;
+	return <RouterProvider router={appRouter} />;
 }
 
 export default App;
