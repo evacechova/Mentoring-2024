@@ -13,7 +13,7 @@ const COMPONENTS: Record<string, JSX.Element> = {
 	EquipmentRental: <EquipmentRental />,
 };
 
-export const APPROUTER = createBrowserRouter([
+export const appRouter = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
