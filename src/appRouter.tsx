@@ -1,17 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Root } from "./Root";
 import { Homepage } from "./Homepage";
-import { Filming } from "./Filming";
-import { Photography } from "./Photography";
-import { EquipmentRental } from "./EquipmentRental";
+// import { Filming } from "./Filming";
+// import { Photography } from "./Photography";
+// import { EquipmentRental } from "./EquipmentRental";
 import { ROUTES } from "./globalVariables";
 
 // Map component to route title
-const COMPONENTS: Record<string, JSX.Element> = {
-	Filming: <Filming />,
-	Photography: <Photography />,
-	"Equipment rental": <EquipmentRental />,
-};
+// const COMPONENTS: Record<string, JSX.Element> = {
+// 	Filming: <Filming />,
+// 	Photography: <Photography />,
+// 	"Equipment rental": <EquipmentRental />,
+// };
 
 export const appRouter = createBrowserRouter([
 	{
@@ -19,9 +19,9 @@ export const appRouter = createBrowserRouter([
 		element: <Root />,
 		children: [
 			{ path: "/", element: <Homepage /> },
-			...Object.entries(ROUTES).map(([key, { route, title }]) => ({
+			...Object.entries(ROUTES).map(([key, { route, component }]) => ({
 				path: route,
-				element: COMPONENTS[title],
+				element: component,
 			})),
 		],
 	},
