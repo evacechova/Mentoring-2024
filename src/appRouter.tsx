@@ -19,7 +19,7 @@ export const appRouter = createBrowserRouter([
 		element: <Root />,
 		children: [
 			{ path: "/", element: <Homepage /> },
-			...Object.entries(ROUTES).map(([key, { route, component }]) => ({
+			...Object.entries(ROUTES).map(([_, { route, component }]) => ({
 				path: route,
 				element: component,
 			})),
