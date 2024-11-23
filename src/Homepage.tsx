@@ -1,13 +1,16 @@
-import { BentoMenu } from "./BentoMenu";
 import { Masthead } from "./Masthead";
+import { PageSection } from "./PageSection";
+import { BentoMenu } from "./BentoMenu";
 import { TextField } from "./TextField";
 
 export const Homepage = () => {
 	return (
 		<>
 			<Masthead />
-			<TextField />
-			<BentoMenu />
+			<PageSection>
+				<TextField />
+				<BentoMenu />
+			</PageSection>
 		</>
 	);
 };
