@@ -1,3 +1,4 @@
+import styles from "./BentoMenu.module.scss";
 import { Link } from "react-router-dom";
 
 type BentoMenuBoxProps = {
@@ -7,11 +8,10 @@ type BentoMenuBoxProps = {
 
 export const BentoMenuBox: React.FC<BentoMenuBoxProps> = ({ text, to }) => {
 	return (
-		<div>
-			<Link to={to}>
-				<img src="" alt="" />
+		<Link to={to}>
+			<div className={styles.container_item}>
 				<h2>{text}</h2>
-			</Link>
-		</div>
+			</div>
+		</Link>
 	);
 };
