@@ -1,4 +1,4 @@
-import masthead_image from "../src/assets/masthead.webp";
+import masthead_image from "../../../src/assets/masthead.webp";
 
 export const Masthead = () => {
 	return (

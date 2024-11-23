@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Root } from "./Root";
-import { Homepage } from "./Homepage";
+import { Homepage } from "./pages/Homepage";
 import { ROUTES } from "./globalVariables";
 
 export const appRouter = createBrowserRouter([

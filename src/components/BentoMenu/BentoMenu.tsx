@@ -1,6 +1,6 @@
 import styles from "./BentoMenu.module.scss";
 import { BentoMenuBox } from "./BentoMenuBox";
-import { ROUTES } from "./globalVariables";
+import { ROUTES } from "../../globalVariables";
 
 export const BentoMenu = () => {
 	return (

@@ -1,6 +1,6 @@
-import { Filming } from "./Filming";
-import { Photography } from "./Photography";
-import { EquipmentRental } from "./EquipmentRental";
+import { Filming } from "./pages/Filming";
+import { Photography } from "./pages/Photography";
+import { EquipmentRental } from "./pages/EquipmentRental";
 
 export const ROUTES: Record<string, { route: string; title: string; component: JSX.Element }> = {
 	film: { route: "/filming", title: "Filming", component: <Filming /> },
