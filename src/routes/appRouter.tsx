@@ -14,8 +14,7 @@ export const appRouter = createBrowserRouter([
 				path: "/",
 				element: (
 					<HomeLayout>
-						{" "}
-						<Homepage />{" "}
+						<Homepage />
 					</HomeLayout>
 				),
 			},
