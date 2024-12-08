@@ -1,11 +1,11 @@
+import { CTO } from "../components/CTO/CTO";
 import { PageSection } from "../components/PageSection/PageSection";
 import { TextField } from "../components/TextField/TextField";
-import { CTO } from "../components/CTO/CTO";
 
-export const Photography = () => {
+export const DanceCovers = () => {
 	return (
 		<>
-			<h1>Photography</h1>
+			<h1>Dance Covers</h1>
 			<PageSection>
 				<TextField />
 				<TextField />
