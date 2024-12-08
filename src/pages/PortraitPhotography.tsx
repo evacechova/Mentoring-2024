@@ -1,11 +1,11 @@
-import { CTO } from "../components/CTO/CTO";
 import { PageSection } from "../components/PageSection/PageSection";
 import { TextField } from "../components/TextField/TextField";
+import { CTO } from "../components/CTO/CTO";
 
-export const CoverFilming = () => {
+export const PortraitPhotography = () => {
 	return (
 		<>
-			<h1>Cover Filming</h1>
+			<h1>Portrait Photography</h1>
 			<PageSection>
 				<TextField />
 				<TextField />
