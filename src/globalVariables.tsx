@@ -1,10 +1,16 @@
-import { Filming } from "./Filming";
-import { Photography } from "./Photography";
-import { EquipmentRental } from "./EquipmentRental";
+import { DanceCovers } from "./pages/DanceCovers";
+import { Events } from "./pages/Events";
+import { EquipmentRental } from "./pages/EquipmentRental";
+import { PortraitPhotography } from "./pages/PortraitPhotography";
 
 export const ROUTES: Record<string, { route: string; title: string; component: JSX.Element }> = {
-	film: { route: "/filming", title: "Filming", component: <Filming /> },
-	photo: { route: "/photography", title: "Photography", component: <Photography /> },
+	dance_covers: { route: "/dance-covers", title: "Dance Covers", component: <DanceCovers /> },
+	events: { route: "/events", title: "Events", component: <Events /> },
+	portrait_photography: {
+		route: "/portrait-photography",
+		title: "Portrait Photography",
+		component: <PortraitPhotography />,
+	},
 	rental: {
 		route: "/equipment-rental",
 		title: "Equipment rental",

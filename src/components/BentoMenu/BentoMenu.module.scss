@@ -1,0 +1,18 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: space-between;
+	max-width: 1230px;
+	padding: 1rem;
+	border: solid 2px black;
+
+	&_item {
+		border: solid 2px black;
+		background-image: url(../src/assets/menu.jpg);
+	}
+}
+
+.item1 {
+	width: max-content;
+}
