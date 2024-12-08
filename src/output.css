@@ -697,8 +697,22 @@ body {
   width: 2.25rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-6\/12 {
+  width: 50%;
 }
 
 .border-collapse {
@@ -767,11 +781,6 @@ body {
   background-color: hsl(var(--destructive));
 }
 
-.bg-lime-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity, 1));
-}
-
 .bg-primary {
   background-color: hsl(var(--primary));
 }
@@ -782,6 +791,11 @@ body {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-lime-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity, 1));
 }
 
 .p-0 {
