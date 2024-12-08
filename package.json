@@ -5,10 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc -b && vite build",
+		"build": "tsc && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview",
-		"twbuild": "npx tailwind -i ./src/app.css -o ./src/output.css --watch"
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.1.0",
