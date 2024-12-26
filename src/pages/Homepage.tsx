@@ -8,7 +8,7 @@ import { Calendar } from "@/components/ui/calendar";
 
 import { fetchGoogleCalendarEvents } from "@/calendar-api";
 
-/* for test function calling*/
+/* for test function calling with new key*/
 console.log(fetchGoogleCalendarEvents());
 
 export const Homepage = () => {
