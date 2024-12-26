@@ -6,8 +6,10 @@ import { TextField } from "../components/TextField/TextField";
 import { CTO } from "../components/CTO/CTO";
 import { Calendar } from "@/components/ui/calendar";
 
+import { fetchGoogleCalendarEvents } from "@/calendar-api";
+
 /* for test function calling*/
-// console.log(fetchGoogleCalendarEvents());
+console.log(fetchGoogleCalendarEvents());
 
 export const Homepage = () => {
 	const [date, setDate] = useState<Date | undefined>(new Date());
