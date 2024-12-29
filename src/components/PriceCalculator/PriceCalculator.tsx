@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export const PriceCalculator = () => {
 	const [service, setService] = useState("");
+	const [hoursCost, setHoursCost] = useState(0);
 
 	function handleServiceChange(event) {
 		setService(event.target.value);
@@ -35,9 +36,9 @@ export const PriceCalculator = () => {
 				{(service === "dance-cover" || service === "events") && (
 					<div>
 						<PCLocation />
-						<PCHours />
+						<PCHours hoursCost={hoursCost} setHoursCost={setHoursCost} />
 						<PCLights />
-						<PCTotal />
+						<PCTotal hours={hoursCost} />
 					</div>
 				)}
 				{service === "portrait-photography" && (
