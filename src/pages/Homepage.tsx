@@ -22,7 +22,6 @@ export const Homepage = () => {
 				/>
 				<TextField />
 				<BentoMenu />
-				<iframe src="https://calendar.google.com/calendar/embed?src=5f1b45d677d6c9068d184677c30dc25a390628f12f368eb06e7f4969d9ccbfe6%40group.calendar.google.com&ctz=Europe%2FPrague"></iframe>
 				<CTO />
 			</PageSection>
 		</>

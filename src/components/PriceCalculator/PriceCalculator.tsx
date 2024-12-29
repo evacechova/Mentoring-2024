@@ -1,3 +1,7 @@
+import { PCHours } from "./PCHours";
+import { PCLights } from "./PCLights";
+import { PCLocation } from "./PCLocation";
+import { PCTotal } from "./PCTotal";
 import styles from "./PriceCalculator.module.scss";
 import { useState } from "react";
 
@@ -28,33 +32,25 @@ export const PriceCalculator = () => {
 					</select>
 				</div>
 
-				{(service === "dance-cover" ||
-					service === "events" ||
-					service === "portrait-photography") && (
-					<div className="hrs">
-						<label htmlFor="hrs4">4 hrs</label>
-						<input type="radio" name="hrs" id="hrs4" />
-						<label htmlFor="hrs8">8 hrs</label>
-						<input type="radio" name="hrs" id="hrs8" />
+				{(service === "dance-cover" || service === "events") && (
+					<div>
+						<PCLocation />
+						<PCHours />
+						<PCLights />
+						<PCTotal />
 					</div>
 				)}
-				{(service === "dance-cover" ||
-					service === "events" ||
-					service === "portrait-photography") && (
-					<div className="location">
-						<label htmlFor="location">Prague</label>
-						<input type="radio" name="location" id="prague" />
-						<label htmlFor="location">Outside of Prague</label>
-						<input type="radio" name="location" id="outside-of-prague" />
+				{service === "portrait-photography" && (
+					<div>
+						<PCLocation />
+						<PCTotal />
 					</div>
 				)}
 				{service === "equipment-rental" && (
-					<div className="lights">
-						<label htmlFor="lights">With lights</label>
-						<input type="checkbox" name="lights" id="lights" />
+					<div className="lights-rental">
+						<p>500 CZK</p>
 					</div>
 				)}
-				<p>Total price:</p>
 			</div>
 		</div>
 	);
