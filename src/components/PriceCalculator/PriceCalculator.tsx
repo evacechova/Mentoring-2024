@@ -8,6 +8,7 @@ import { useState } from "react";
 export const PriceCalculator = () => {
 	const [service, setService] = useState("");
 	const [hoursCost, setHoursCost] = useState(0);
+	const [locationCost, setLocationCost] = useState(0);
 
 	function handleServiceChange(event) {
 		setService(event.target.value);
@@ -35,16 +36,16 @@ export const PriceCalculator = () => {
 
 				{(service === "dance-cover" || service === "events") && (
 					<div>
-						<PCLocation />
+						<PCLocation locationCost={locationCost} setLocationCost={setLocationCost} />
 						<PCHours hoursCost={hoursCost} setHoursCost={setHoursCost} />
 						<PCLights />
-						<PCTotal hours={hoursCost} />
+						<PCTotal hours={hoursCost} location={locationCost} />
 					</div>
 				)}
 				{service === "portrait-photography" && (
 					<div>
-						<PCLocation />
-						<PCTotal />
+						<PCLocation locationCost={locationCost} setLocationCost={setLocationCost} />
+						<PCTotal hours={hoursCost} location={locationCost} />
 					</div>
 				)}
 				{service === "equipment-rental" && (

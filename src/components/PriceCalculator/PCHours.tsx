@@ -11,24 +11,20 @@ export const PCHours = ({
 	];
 
 	return (
-		<div className="hrs">
+		<div className="pchours">
 			{options.map((option) => (
 				<div key={option.label}>
-					<label htmlFor={`hrs${option.value}`}>{option.label}</label>
+					<label htmlFor={`pchours${option.value}`}>{option.label}</label>
 					<input
 						type="radio"
-						name="hrs"
-						id={`hrs${option.value}`}
+						name="pchours"
+						id={`pchours${option.value}`}
 						value={option.value}
 						checked={hoursCost === option.value}
 						onChange={(e) => setHoursCost(Number(e.target.value))}
 					></input>
 				</div>
 			))}
-			<label htmlFor="hrs4">4 hrs</label>
-			<input type="radio" name="hrs" id="hrs4" value="750" />
-			<label htmlFor="hrs8">8 hrs</label>
-			<input type="radio" name="hrs" id="hrs8" value="1500" />
 		</div>
 	);
 };
