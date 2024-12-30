@@ -14,11 +14,11 @@ export const PCLocation = ({
 		<div className="pclocation">
 			{options.map((option) => (
 				<div key={option.label}>
-					<label htmlFor={`location${option.value}`}>{option.label}</label>
+					<label htmlFor={`pclocation${option.value}`}>{option.label}</label>
 					<input
 						type="radio"
 						name="pclocation"
-						id={`location${option.value}`}
+						id={`pclocation${option.value}`}
 						value={option.value}
 						checked={locationCost === option.value}
 						onChange={(e) => setLocationCost(Number(e.target.value))}

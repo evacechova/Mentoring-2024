@@ -9,6 +9,7 @@ export const PriceCalculator = () => {
 	const [service, setService] = useState("");
 	const [hoursCost, setHoursCost] = useState(0);
 	const [locationCost, setLocationCost] = useState(0);
+	const [lightsCost, setLightsCost] = useState(0);
 
 	function handleServiceChange(event) {
 		setService(event.target.value);
@@ -38,14 +39,14 @@ export const PriceCalculator = () => {
 					<div>
 						<PCLocation locationCost={locationCost} setLocationCost={setLocationCost} />
 						<PCHours hoursCost={hoursCost} setHoursCost={setHoursCost} />
-						<PCLights />
-						<PCTotal hours={hoursCost} location={locationCost} />
+						<PCLights lightsCost={lightsCost} setLightsCost={setLightsCost} />
+						<PCTotal hours={hoursCost} location={locationCost} lights={lightsCost} />
 					</div>
 				)}
 				{service === "portrait-photography" && (
 					<div>
 						<PCLocation locationCost={locationCost} setLocationCost={setLocationCost} />
-						<PCTotal hours={hoursCost} location={locationCost} />
+						<PCTotal hours={hoursCost} location={locationCost} lights={lightsCost} />
 					</div>
 				)}
 				{service === "equipment-rental" && (
