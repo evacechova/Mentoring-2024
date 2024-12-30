@@ -1,19 +1,19 @@
 //function to fetch events from cloud API endpoint
 
+type CalendarEvent = {
+	start?: {
+		dateTime?: string; // ISO for events with specific times
+		date?: string; // ISO for all-day events
+	};
+	end?: {
+		dateTime?: string; // ISO for events with specific times
+		date?: string; // ISO for all-day events
+	};
+};
+
 export const fetchGoogleCalendarEvents = async () => {
 	const apiKey = import.meta.env.VITE_AWS_API_KEY; //secured API key
 	const apiUrl = "https://ghvy6isiq6.execute-api.eu-north-1.amazonaws.com/dev/events"; //AWS API url
-
-	interface CalendarEvent {
-		start?: {
-			dateTime?: string; // ISO for events with specific times
-			date?: string; // ISO for all-day events
-		};
-		end?: {
-			dateTime?: string; // ISO for events with specific times
-			date?: string; // ISO for all-day events
-		};
-	}
 
 	try {
 		const response = await fetch(apiUrl, { method: "GET", headers: { "x-api-key": apiKey } });
