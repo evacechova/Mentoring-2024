@@ -13,6 +13,10 @@ export const PriceCalculator = () => {
 
 	function handleServiceChange(event) {
 		setService(event.target.value);
+		//Total price reset whenever the type of service changes
+		setHoursCost(0);
+		setLocationCost(0);
+		setLightsCost(0);
 	}
 
 	return (
