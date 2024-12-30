@@ -1,12 +1,10 @@
-export const PCTotal = ({
-	hours = 0,
-	location = 0,
-	lights = 0,
-}: {
+type PCTotalProps = {
 	hours?: number;
 	location?: number;
 	lights: number;
-}) => {
+};
+
+export const PCTotal: React.FC<PCTotalProps> = ({ hours = 0, location = 0, lights = 0 }) => {
 	const total = hours + location + lights;
 
 	return (

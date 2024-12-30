@@ -11,7 +11,7 @@ export const PriceCalculator = () => {
 	const [locationCost, setLocationCost] = useState(0);
 	const [lightsCost, setLightsCost] = useState(0);
 
-	function handleServiceChange(event: React.ChangeEvent<HTMLInputElement>) {
+	function handleServiceChange(event: React.ChangeEvent<HTMLSelectElement>) {
 		setService(event.target.value);
 		//Total price reset whenever the type of service changes
 		setHoursCost(0);

@@ -1,7 +1,7 @@
-interface PCLightsProps {
+type PCLightsProps = {
 	lightsCost: number;
 	setLightsCost: (value: number) => void;
-}
+};
 
 export const PCLights: React.FC<PCLightsProps> = ({ lightsCost, setLightsCost }) => {
 	const option = { label: "With lights", value: 100 };
@@ -20,7 +20,6 @@ export const PCLights: React.FC<PCLightsProps> = ({ lightsCost, setLightsCost })
 				id={`pclights${option.label}`}
 				value={option.value}
 				checked={lightsCost === option.value}
-				// onChange={(e) => setLightsCost(Number(e.target.value))}
 				onChange={handleChange}
 			/>
 		</div>

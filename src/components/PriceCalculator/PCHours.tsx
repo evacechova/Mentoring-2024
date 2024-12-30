@@ -1,10 +1,9 @@
-export const PCHours = ({
-	hoursCost,
-	setHoursCost,
-}: {
+type PCHoursProps = {
 	hoursCost: number;
 	setHoursCost: (value: number) => void;
-}) => {
+};
+
+export const PCHours: React.FC<PCHoursProps> = ({ hoursCost, setHoursCost }) => {
 	const options = [
 		{ label: "4 hrs", value: 750 },
 		{ label: "8 hrs", value: 1500 },

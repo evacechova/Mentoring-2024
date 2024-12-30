@@ -1,10 +1,9 @@
-export const PCLocation = ({
-	locationCost,
-	setLocationCost,
-}: {
+type PCLocationProps = {
 	locationCost: number;
 	setLocationCost: (value: number) => void;
-}) => {
+};
+
+export const PCLocation: React.FC<PCLocationProps> = ({ locationCost, setLocationCost }) => {
 	const options = [
 		{ label: "Prague", value: 0 },
 		{ label: "Outside of Prague", value: 300 },
