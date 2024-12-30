@@ -26,7 +26,7 @@ export const fetchGoogleCalendarEvents = async () => {
 			const end = new Date(endDate);
 			const dates: string[] = [];
 
-			for (let date: Date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
+			for (let date: Date = start; date <= end; date.setDate(date.getDate() + 1)) {
 				dates.push(date.toISOString().split("T")[0]); //formatting dates as YYYY-MM-DD
 			}
 
