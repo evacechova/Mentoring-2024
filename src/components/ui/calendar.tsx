@@ -19,7 +19,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
 			const dates = await fetchGoogleCalendarEvents();
 			setUnavailableDates(dates);
 		};
-		fetchDates();
+		void fetchDates();
 	}, []);
 
 	// Function to check if a date is in the unavailableDates array
