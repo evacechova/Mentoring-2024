@@ -1,8 +1,9 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { DayPicker, DayPickerProps } from "react-day-picker";
-
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import { fetchGoogleCalendarEvents } from "@/calendar-api";
 
 export type CalendarProps = DayPickerProps & {
 	className?: string;
@@ -10,6 +11,20 @@ export type CalendarProps = DayPickerProps & {
 };
 
 function Calendar({ className, classNames, showOutsideDays = true, ...props }: CalendarProps) {
+	// Unavailable dates conditional formatting prep functions
+	const [unavailableDates, setUnavailableDates] = useState<string[]>([]);
+
+	useEffect(() => {
+		const fetchDates = async () => {
+			const dates = await fetchGoogleCalendarEvents();
+			setUnavailableDates(dates);
+		};
+		void fetchDates();
+	}, []);
+
+	// Function to check if a date is in the unavailableDates array
+	const isUnavailable = (day: Date) => unavailableDates.includes(day.toISOString().split("T")[0]);
+
 	return (
 		<DayPicker
 			showOutsideDays={showOutsideDays}
@@ -51,6 +66,13 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
 				day_range_middle: "aria-selected:bg-accent aria-selected:text-accent-foreground",
 				day_hidden: "invisible",
 				...classNames,
+			}}
+			// modifier classes for the unavailable dates
+			modifiers={{
+				unavailable: (day: Date) => isUnavailable(day),
+			}}
+			modifiersClassNames={{
+				unavailable: "bg-red-100 text-decoration-line: line-through", // Custom class for unavailable dates
 			}}
 			components={{
 				IconLeft: (iconProps) => <ChevronLeft {...iconProps} className="h-4 w-4" />,
