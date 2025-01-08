@@ -8,10 +8,10 @@ type LayoutProps = {
 
 export const DefaultLayout: React.FC<LayoutProps> = ({ children }) => {
 	return (
-		<>
+		<div className="relative min-h-screen">
 			<Header />
 			{children}
 			<Footer />
-		</>
+		</div>
 	);
 };

@@ -5,11 +5,11 @@
 	justify-content: space-between;
 	max-width: 1230px;
 	padding: 1rem;
-	border: solid 2px black;
 
 	&_item {
-		border: solid 2px black;
+		padding: 2rem;
 		background-image: url(../src/assets/menu.jpg);
+		border-radius: 2px;
 	}
 }
 

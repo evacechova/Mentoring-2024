@@ -1,6 +1,6 @@
 export const TextField = () => {
 	return (
-		<>
+		<div className="my-4 p-4 bg-gray-300">
 			<h3>Lorem ipsum dolor</h3>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec dictum purus.
@@ -10,6 +10,6 @@ export const TextField = () => {
 				Phasellus gravida eleifend augue et dignissim. Morbi posuere mattis velit non
 				pretium. Proin lacus felis, dictum at tortor non, semper fermentum ipsum.
 			</p>
-		</>
+		</div>
 	);
 };

@@ -1,4 +1,4 @@
-import { CTO } from "../components/CTO/CTO";
+import { CTA } from "../components/CTA/CTA";
 import { PageSection } from "../components/PageSection/PageSection";
 import { TextField } from "../components/TextField/TextField";
 
@@ -9,7 +9,7 @@ export const DanceCovers = () => {
 			<PageSection>
 				<TextField />
 				<TextField />
-				<CTO />
+				<CTA />
 			</PageSection>
 		</>
 	);

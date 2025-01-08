@@ -9,11 +9,11 @@ type LayoutProps = {
 
 export const HomeLayout: React.FC<LayoutProps> = ({ children }) => {
 	return (
-		<>
+		<div className="relative min-h-screen">
 			<Header />
 			<Masthead />
 			{children}
 			<Footer />
-		</>
+		</div>
 	);
 };

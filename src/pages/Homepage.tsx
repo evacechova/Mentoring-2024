@@ -2,8 +2,7 @@ import { useState } from "react";
 
 import { PageSection } from "../components/PageSection/PageSection";
 import { BentoMenu } from "../components/BentoMenu/BentoMenu";
-import { TextField } from "../components/TextField/TextField";
-import { CTO } from "../components/CTO/CTO";
+import { CTA } from "../components/CTA/CTA";
 import { Calendar } from "@/components/ui/calendar";
 import { PriceCalculator } from "../components/PriceCalculator/PriceCalculator";
 
@@ -25,9 +24,8 @@ export const Homepage = () => {
 					onSelect={setDate}
 					className="rounded-md border"
 				/>
-				<TextField />
 				<BentoMenu />
-				<CTO />
+				<CTA />
 			</PageSection>
 		</>
 	);

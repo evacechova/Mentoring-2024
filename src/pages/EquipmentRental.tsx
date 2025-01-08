@@ -1,6 +1,6 @@
 import { PageSection } from "../components/PageSection/PageSection";
 import { TextField } from "../components/TextField/TextField";
-import { CTO } from "../components/CTO/CTO";
+import { CTA } from "../components/CTA/CTA";
 
 export const EquipmentRental = () => {
 	return (
@@ -9,7 +9,7 @@ export const EquipmentRental = () => {
 			<PageSection>
 				<TextField />
 				<TextField />
-				<CTO />
+				<CTA />
 			</PageSection>
 		</>
 	);
