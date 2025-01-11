@@ -1,13 +1,14 @@
 import styles from "./DiamondGallery.module.scss";
-import { DiamondGalleryItem } from "./DiamondGalleryItem";
+import { DiamondGalleryColorBlock } from "./DiamondGalleryColorBlock";
+import { DiamondGalleryPhoto } from "./DiamondGalleryPhoto";
 
 export const DiamondGallery = () => {
 	return (
 		<div className={styles.container}>
-			<DiamondGalleryItem />
-			<DiamondGalleryItem />
-			<DiamondGalleryItem />
-			<DiamondGalleryItem />
+			<DiamondGalleryPhoto />
+			<DiamondGalleryPhoto />
+			<DiamondGalleryPhoto />
+			<DiamondGalleryColorBlock />
 		</div>
 	);
 };
