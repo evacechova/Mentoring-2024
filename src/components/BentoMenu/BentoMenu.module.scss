@@ -7,9 +7,15 @@
 	padding: 1rem;
 
 	&_item {
+		height: 300px;
+		width: 300px;
 		padding: 2rem;
-		background-image: url(../src/assets/menu.jpg);
+		// background-image: url(../src/assets/menu.jpg);
 		border-radius: 2px;
+
+		&_img {
+			object-fit: cover;
+		}
 	}
 }
 

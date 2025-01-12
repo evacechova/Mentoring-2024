@@ -14,13 +14,14 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
 	// Unavailable dates conditional formatting prep functions
 	const [unavailableDates, setUnavailableDates] = useState<string[]>([]);
 
-	useEffect(() => {
-		const fetchDates = async () => {
-			const dates = await fetchGoogleCalendarEvents();
-			setUnavailableDates(dates);
-		};
-		void fetchDates();
-	}, []);
+	/* temporarily disabled */
+	// useEffect(() => {
+	// 	const fetchDates = async () => {
+	// 		const dates = await fetchGoogleCalendarEvents();
+	// 		setUnavailableDates(dates);
+	// 	};
+	// 	void fetchDates();
+	// }, []);
 
 	// Function to check if a date is in the unavailableDates array
 	const isUnavailable = (day: Date) => unavailableDates.includes(day.toISOString().split("T")[0]);

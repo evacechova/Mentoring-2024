@@ -6,10 +6,10 @@ import { CTA } from "../components/CTA/CTA";
 import { Calendar } from "@/components/ui/calendar";
 import { PriceCalculator } from "../components/PriceCalculator/PriceCalculator";
 
-import { fetchGoogleCalendarEvents } from "@/calendar-api";
+// import { fetchGoogleCalendarEvents } from "@/calendar-api";
 
 /* for test function calling with new key*/
-console.log(fetchGoogleCalendarEvents());
+// console.log(fetchGoogleCalendarEvents());
 
 export const Homepage = () => {
 	const [date, setDate] = useState<Date | undefined>(new Date());
