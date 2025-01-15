@@ -13,7 +13,7 @@ export const ROUTES: Record<
 		route: "/dance-covers",
 		title: "Dance Covers",
 		component: <DanceCovers />,
-		image_path: "",
+		image_path: "menu.jpg",
 	},
 	events: {
 		route: "/events",
@@ -31,6 +31,6 @@ export const ROUTES: Record<
 		route: "/equipment-rental",
 		title: "Equipment rental",
 		component: <EquipmentRental />,
-		image_path: "",
+		image_path: "menu.jpg",
 	},
 } as const;
