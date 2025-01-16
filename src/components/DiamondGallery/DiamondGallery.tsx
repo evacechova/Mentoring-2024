@@ -9,6 +9,7 @@ export const DiamondGallery = () => {
 			<DiamondGalleryPhoto />
 			<DiamondGalleryPhoto />
 			<DiamondGalleryColorBlock />
+			<DiamondGalleryColorBlock />
 		</div>
 	);
 };

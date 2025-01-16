@@ -15,17 +15,17 @@ export const ROUTES: Record<
 		component: <DanceCovers />,
 		image_path: "menu.jpg",
 	},
-	events: {
-		route: "/events",
-		title: "Events",
-		component: <Events />,
-		image_path: "menu_events.webp",
-	},
 	portrait_photography: {
 		route: "/portrait-photography",
 		title: "Portrait Photography",
 		component: <PortraitPhotography />,
 		image_path: "menu_portrait.webp",
+	},
+	events: {
+		route: "/events",
+		title: "Events",
+		component: <Events />,
+		image_path: "menu_events.webp",
 	},
 	rental: {
 		route: "/equipment-rental",
