@@ -1,7 +1,7 @@
 .container {
-	--size: 20vw;
+	--size: 15vw;
 	display: grid;
-	grid-template-columns: repeat(5, var(--size)); // 5 columns
+	grid-template-columns: repeat(auto-fit, minmax(var(--size)), 1fr);
 	grid-template-rows: calc(var(--size) * 3) calc(var(--size) * 2); // 2 rows
 	gap: 1rem;
 
@@ -18,7 +18,7 @@
 			position: absolute;
 			bottom: 1rem; // Adjust for spacing
 			left: 1rem;
-			color: limegreen;
+			color: white;
 			font-weight: 800;
 		}
 	}
