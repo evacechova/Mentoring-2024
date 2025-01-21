@@ -4,7 +4,6 @@ import { PageSection } from "../components/PageSection/PageSection";
 import { BentoMenu } from "../components/BentoMenu/BentoMenu";
 import { CTA } from "../components/CTA/CTA";
 import { Calendar } from "@/components/ui/calendar";
-import { PriceCalculator } from "../components/PriceCalculator/PriceCalculator";
 
 // import { fetchGoogleCalendarEvents } from "@/calendar-api";
 
@@ -17,15 +16,19 @@ export const Homepage = () => {
 	return (
 		<>
 			<PageSection>
-				<PriceCalculator />
-				<Calendar
-					mode="single"
-					selected={date}
-					onSelect={setDate}
-					className="rounded-md border"
-				/>
+				<div className="flex gap-2 justify-center">
+					<Calendar
+						mode="single"
+						selected={date}
+						onSelect={setDate}
+						className="rounded-md border"
+					/>
+					<div className="flex flex-col">
+						<p>← Check out my availability.</p>
+						<CTA />
+					</div>
+				</div>
 				<BentoMenu />
-				<CTA />
 			</PageSection>
 		</>
 	);

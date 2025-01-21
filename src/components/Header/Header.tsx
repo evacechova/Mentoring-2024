@@ -3,7 +3,7 @@ import { ROUTES } from "@/globalVariables";
 
 export const Header = () => {
 	return (
-		<div className="flex justify-between p-2">
+		<div className="flex justify-between p-2 mb-4">
 			<div>
 				<Link to="/">
 					<h1 className="font-bold">Amateur at Everything</h1>
