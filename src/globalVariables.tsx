@@ -1,35 +1,35 @@
 import { DanceCovers } from "./pages/DanceCovers";
 import { Events } from "./pages/Events";
 import { EquipmentRental } from "./pages/EquipmentRental";
-import { PortraitPhotography } from "./pages/PortraitPhotography";
+import { Portraits } from "./pages/Portraits";
 import { About } from "./pages/About";
 
 export const ROUTES: Record<
 	string,
 	{ route: string; title: string; component: JSX.Element; image_path: string }
 > = {
-	about: { route: "/about", title: "About", component: <About />, image_path: "" },
+	about: { route: "/about", title: "ABOUT", component: <About />, image_path: "" },
 	dance_covers: {
 		route: "/dance-covers",
-		title: "Dance Covers",
+		title: "DANCE COVERS",
 		component: <DanceCovers />,
 		image_path: "menu.jpg",
 	},
 	portrait_photography: {
-		route: "/portrait-photography",
-		title: "Portrait Photography",
-		component: <PortraitPhotography />,
+		route: "/portraits",
+		title: "PORTRAITS",
+		component: <Portraits />,
 		image_path: "menu_portrait.webp",
 	},
 	events: {
 		route: "/events",
-		title: "Events",
+		title: "EVENTS",
 		component: <Events />,
 		image_path: "menu_events.webp",
 	},
 	rental: {
 		route: "/equipment-rental",
-		title: "Equipment rental",
+		title: "RENTAL",
 		component: <EquipmentRental />,
 		image_path: "menu.jpg",
 	},
