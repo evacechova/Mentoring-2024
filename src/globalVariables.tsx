@@ -13,7 +13,7 @@ export const ROUTES: Record<
 		route: "/dance-covers",
 		title: "DANCE COVERS",
 		component: <DanceCovers />,
-		image_path: "menu.jpg",
+		image_path: "menu_dance_covers.webp",
 	},
 	portrait_photography: {
 		route: "/portraits",
@@ -31,6 +31,6 @@ export const ROUTES: Record<
 		route: "/equipment-rental",
 		title: "RENTAL",
 		component: <EquipmentRental />,
-		image_path: "menu.jpg",
+		image_path: "menu_rental.webp",
 	},
 } as const;

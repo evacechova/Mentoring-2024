@@ -73,7 +73,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
 				unavailable: (day: Date) => isUnavailable(day),
 			}}
 			modifiersClassNames={{
-				unavailable: "bg-red-100 text-decoration-line: line-through", // Custom class for unavailable dates
+				unavailable: "bg-rose-500 text-decoration-line: line-through", // Custom class for unavailable dates
 			}}
 			components={{
 				IconLeft: (iconProps) => <ChevronLeft {...iconProps} className="h-4 w-4" />,

@@ -1,11 +1,13 @@
-import IG_icon from "../../assets/icons/Instagram_Glyph_Gradient.png";
+import globalstyles from "../../globalStyles.module.scss";
 
 export const CTA = () => {
 	return (
-		<div className="flex my-4 justify-center border rounded-sm">
-			<a className="flex" href="https://www.instagram.com/luong.manh.truong/">
-				<p>To book a shoot, DM me on my Instagram</p>
-				<img src={IG_icon} alt="IG icon" className="w-8 h-8 p-1" />
+		<div className="mt-16 rounded-md text-white text-xl bg-gradient-to-r from-rose-500 via-fuchsia-600 to-indigo-600 w-full hover:from-rose-600 hover:via-fuchsia-700 hover:to-indigo-700">
+			<a
+				href="https://www.instagram.com/luong.manh.truong/"
+				className={`${globalstyles.poppins_bold} p-4 text-white text-xl text-center w-full h-full block`}
+			>
+				BOOK A SESSION
 			</a>
 		</div>
 	);
