@@ -18,7 +18,7 @@ export const HomeLayout: React.FC<LayoutProps> = ({ children }) => {
 				className={`${globalstyles.poppins_medium} flex flex-row items-center justify-evenly p-8 mt-4 bg-gradient-to-r from-rose-500 via-fuchsia-600 to-indigo-600 w-full text-3xl text-white`}
 			>
 				<p>40+ cover shoots</p>
-				<p>10+ dance groups</p>
+				<p>collaboration with 10+ dance groups</p>
 			</div>
 			<Footer />
 		</div>

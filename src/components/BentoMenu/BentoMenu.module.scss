@@ -7,18 +7,31 @@
 	gap: 1rem;
 	justify-content: center;
 
+	.photo_wrapper {
+		max-width: 370px;
+		max-height: 210px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
 	.photo {
 		display: block;
 		max-width: 370px;
 		max-height: 210px;
 		width: 370px;
 		height: 210px;
-		// position: relative; // Required for positioning <h2>
-		overflow: hidden;
-		border-radius: 10px;
+		overflow: hidden; /* Ensures only the scaled background is visible */
+
 		background-position: center;
 		background-size: cover;
+		transition: all 0.5s ease-in-out; /* Smooth zoom effect */
+
+		/* Background zoom on hover */
+		&:hover {
+			transform: scale3d(1.1, 1.1, 1.1);
+		}
 	}
+
 	h2 {
 		color: black;
 		text-align: center;

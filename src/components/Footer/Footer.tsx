@@ -9,13 +9,20 @@ export const Footer = () => {
 					2025 © Amateur at Everything
 				</p>
 				<p className={`${globalstyles.poppins_normal} text-xs  `}>
-					Page made by <a href="https://www.linkedin.com/in/evacechova/">Eva Čechová</a>
+					Page made by{" "}
+					<a href="https://www.linkedin.com/in/evacechova/">
+						<span className="transition duration-300 ease-in-out hover:text-white">
+							Eva Čechová
+						</span>
+					</a>
 				</p>
 			</div>
 
 			<a className="flex flex-row " href="https://www.instagram.com/luong.manh.truong/">
 				<img src={IGlogo} alt="IG icon" className="w-8 h-8 p-1" />
-				<p className="mx-2 text-sm self-center ">INSTAGRAM</p>
+				<p className="mx-2 text-sm self-center transition duration-300 ease-in-out hover:text-white ">
+					INSTAGRAM
+				</p>
 			</a>
 		</div>
 	);

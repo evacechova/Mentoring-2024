@@ -12,12 +12,14 @@ type BentoMenuBoxProps = {
 export const BentoMenuBox: React.FC<BentoMenuBoxProps> = ({ text, to, image }) => {
 	return (
 		<Link to={to}>
-			<div
-				style={{
-					backgroundImage: `url(${image})`,
-				}}
-				className={styles.photo}
-			></div>
+			<div className={styles.photo_wrapper}>
+				<div
+					style={{
+						backgroundImage: `url(${image})`,
+					}}
+					className={styles.photo}
+				></div>
+			</div>
 			<h2 className={`${globalstyles.poppins_semibold} `}>{text}</h2>
 		</Link>
 	);
