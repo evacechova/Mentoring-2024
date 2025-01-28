@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-export const Root = () => {
+export const NavigationRoot = () => {
 	return (
 		<>
 			<Outlet />

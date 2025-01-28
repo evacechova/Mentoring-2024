@@ -7,10 +7,10 @@ export const Header = () => {
 	return (
 		<div>
 			<CalendarBar />
-			<div className="flex justify-between items-center py-2 mb-4 mx-11">
+			<div className="flex justify-between items-center py-2 m-4 mx-11">
 				<div>
 					<Link to="/">
-						<h1 className={`${styles.poppins_bold} text-black text-3xl `}>
+						<h1 className={`${styles.poppins_bold} text-black text-3xl`}>
 							AMATEUR AT EVERYTHING
 						</h1>
 					</Link>

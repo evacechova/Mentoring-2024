@@ -16,6 +16,7 @@ export const Homepage = () => {
 	return (
 		<>
 			<PageSection>
+				<PageH2 text="Choose a date" />
 				<Calendar
 					mode="single"
 					selected={date}

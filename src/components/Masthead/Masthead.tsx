@@ -1,6 +1,6 @@
 import masthead_image from "../../../src/assets/homepage/masthead.webp";
 import styles from "../../globalStyles.module.scss";
-import { CTA } from "../CTA/CTA";
+import { CTAfull } from "../CTA/CTAfull";
 
 export const Masthead = () => {
 	return (
@@ -21,7 +21,7 @@ export const Masthead = () => {
 				<p className={`${styles.poppins_medium} text-white text-3xl leading-tight pr-20`}>
 					Choose a style and DM me on IG to book your session.
 				</p>
-				<CTA />
+				<CTAfull />
 			</div>
 		</div>
 	);
