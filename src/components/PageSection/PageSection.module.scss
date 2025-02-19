@@ -1,4 +1,7 @@
 .container {
-	max-width: 1230px;
-	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	// margin-inline: 1rem;
+	// padding-inline: 2rem;
+	// row-gap: 1rem;
 }

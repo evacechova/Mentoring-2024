@@ -1,12 +1,11 @@
-import { PageH1 } from "@/components/PageHeadings/PageH1";
-import { CTA } from "../components/CTA/CTA";
 import { PageSection } from "../components/PageSection/PageSection";
+import { CTA } from "../components/CTA/CTA";
+import { PageH1 } from "@/components/PageHeadings/PageH1";
 import { PriceCalculator } from "@/components/PriceCalculator/PriceCalculator";
+import { ColorBlockSet } from "@/components/ColorBlocks/ColorBlockSet";
 import { SubH } from "@/components/PageHeadings/SubH";
 
-import { ColorBlockSet } from "@/components/ColorBlocks/ColorBlockSet";
-
-export const DanceCovers = () => {
+export const Portraits = () => {
 	const blocks = [
 		{
 			label: "DAY & NIGHT",
@@ -21,12 +20,11 @@ export const DanceCovers = () => {
 			text: "Friendly informal atmosphere is a given for you to feel comfortable flexing your moves.",
 		},
 	];
-
 	return (
 		<>
 			<PageSection>
-				<PageH1 text={"Dance Covers"} />
-				<SubH text="Become a kpop idol. Shoot a dance cover in public, during day, at night, one-take or with cuts." />
+				<PageH1 text={"Portraits"} />
+				<SubH text="Want them pro profile pictures for your SM? Just say the word!" />
 				<ColorBlockSet blocks={blocks} />
 
 				<PriceCalculator />

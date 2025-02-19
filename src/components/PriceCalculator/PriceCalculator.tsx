@@ -4,6 +4,7 @@ import { PCLocation } from "./PCLocation";
 import { PCTotal } from "./PCTotal";
 import styles from "./PriceCalculator.module.scss";
 import { useState } from "react";
+import globalstyles from "../../globalStyles.module.scss";
 
 export const PriceCalculator = () => {
 	const [service, setService] = useState("");
@@ -20,7 +21,7 @@ export const PriceCalculator = () => {
 	}
 
 	return (
-		<div className={styles.wrapper}>
+		<div className={`${styles.wrapper} ${globalstyles.poppins_semibold} justify-items-center`}>
 			<h1>How much will it cost me?</h1>
 			<div className="calculator">
 				<div className="service-type">
